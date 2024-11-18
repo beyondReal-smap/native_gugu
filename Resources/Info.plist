@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- StoreKit 설정 -->
+    <key>SKStoreKitDefined</key>
+    <true/>
+    <key>StoreKitRequestProductsURL</key>
+    <string>your_product_configuration_url</string>
+    <key>SKStoreKitConfigured</key>
+    <true/>
+    <key>StoreKit Configuration</key>
+    <string>Configuration.storekit</string>
+
+    <!-- 사용자 추적 권한 설정 -->
+    <key>NSUserTrackingUsageDescription</key>
+    <string>더 나은 광고 경험을 제공하기 위해 사용자의 데이터를 수집합니다. 수집되는 정보: IDFA, 사용자 활동 데이터</string>
+
+    <!-- 암호화 관련 설정 -->
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+
+    <!-- AdMob 설정 -->
+    <key>GADApplicationIdentifier</key>
+    <string>ca-app-pub-7432142706137657~6676630193</string>
+
+    <!-- SKAdNetwork 설정 -->
+    <key>SKAdNetworkItems</key>
+    <array>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>cstr6suwn9.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>4fzdc2evr5.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>4pfyvq9l8r.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>2fnua5tdw4.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>ydx93a7ass.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>5a6flpkh64.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>p78axxw29g.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>v72qych5uu.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>c6k4g5qg8m.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>s39g8k73mm.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>3sh42y64q3.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>3qy4746246.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>f38h382jlk.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>hs6bdukanm.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>wg4vff78zm.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>y5ghdn5j9k.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>n6fk4nfna4.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>v9wttpbfk9.skadnetwork</string>
+        </dict>
+        <dict>
+            <key>SKAdNetworkIdentifier</key>
+            <string>n38lu8286q.skadnetwork</string>
+        </dict>
+    </array>
+
+    <!-- WKWebView 도메인 설정 -->
+    <key>WKAppBoundDomains</key>
+    <array>
+        <string>next.smap.site</string>
+        <string>smap.site</string>
+        <string>www.next.smap.site</string>
+        <string>www.smap.site</string>
+    </array>
+
+    <!-- 네트워크 보안 설정 -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!-- 로컬 개발 환경 설정 -->
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <!-- 로컬호스트 설정 -->
+            <key>localhost</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <false/>
+            </dict>
+            <!-- 프로덕션 도메인 설정 -->
+            <key>smap.site</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+            </dict>
+            <key>next.smap.site</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.2</string>
+                <key>NSExceptionRequiresForwardSecrecy</key>
+                <true/>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+
+    <!-- 앱 Scene 설정 -->
+    <key>UIApplicationSceneManifest</key>
+    <dict>
+        <key>UIApplicationSupportsMultipleScenes</key>
+        <false/>
+        <key>UISceneConfigurations</key>
+        <dict>
+            <key>UIWindowSceneSessionRoleApplication</key>
+            <array>
+                <dict>
+                    <key>UISceneConfigurationName</key>
+                    <string>Default Configuration</string>
+                    <key>UISceneDelegateClassName</key>
+                    <string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+                    <key>UISceneStoryboardFile</key>
+                    <string>Main</string>
+                </dict>
+            </array>
+        </dict>
+    </dict>
+
+    <!-- StoreKit 추가 설정 -->
+    <key>StoreKit</key>
+    <dict>
+        <key>DefaultStoreKitConfigurationName</key>
+        <string>Configuration</string>
+        <key>AutoInitialize</key>
+        <false/>
+    </dict>
+
+    <!-- WebKit 설정 -->
+    <key>WebKitDeveloperExtras</key>
+    <true/>
+
+    <!-- WebView 설정 -->
+    <key>WKWebViewConfiguration</key>
+    <dict>
+        <key>allowsInlineMediaPlayback</key>
+        <true/>
+        <key>allowsAirPlayForMediaPlayback</key>
+        <true/>
+        <key>mediaTypesRequiringUserActionForPlayback</key>
+        <array/>
+        <key>limitsNavigationsToAppBoundDomains</key>
+        <false/>
+    </dict>
+
+    <!-- iPad 지원 설정 -->
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <!-- 기기 요구사항 -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>armv7</string>
+    </array>
+
+    <!-- UI 스타일 -->
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+
+    <!-- 앱 이름 -->
+    <key>CFBundleDisplayName</key>
+    <string>구구단</string>
+
+    <!-- 버전 정보 -->
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- 최소 iOS 버전 -->
+    <key>MinimumOSVersion</key>
+    <string>14.0</string>
+</dict>
+</plist>
